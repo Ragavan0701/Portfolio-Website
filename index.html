@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        text: 'text 5s ease infinite',
+                    },
+                    keyframes: {
+                        text: {
+                            '0%, 100%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'left center',
+                            },
+                            '50%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'right center',
+                            },
+                        },
+                    },
+                },
+            },
+            plugins: [],
+        }
+    </script>
+    <style>
+      
+        .section {
+            display: none;
+        }
+        @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+            }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+}
+
+.fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 2.5s ease forwards;
+}
+.div1{
+    border-top-right-radius: 80px 80px;
+}
+
+    </style>
+</head>
+<body class="bg-gradient-to-r from-white to-gray-300">
+    
+    <nav class="text-black py-6">
+        <div class="container mx-auto px-4 flex justify-between items-center lg:flex-row flex-col">
+            <div>
+                <a href="#" class="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black text-3xl font-bold">RAGAVAN</a>
+            </div>
+            <div class="flex lg:justify-end w-full lg:w-auto gap-5 lg:items-end lg:mt">
+                <!-- Toggle button -->
+                <div class="lg:hidden ml-auto">
+                    <div class="nav-toggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+                <!-- End Toggle button -->
+
+                <ul class="flex lg:flex-row flex-col nav-menu gap-5 lg:items-end lg:space-x-5">
+                    <li><a href="#home" class="nav-link hover:text-gray-300 hover:bg-black p-2 rounded-lg hover:linear hover:duration-300">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="ml-1">HOME</span>
+                    </a></li>
+                    <li><a href="#about" class="nav-link hover:text-gray-300 hover:bg-black p-2 rounded-lg hover:linear hover:duration-300">
+                        <i class="fa-solid fa-address-card"></i>
+                        <span class="ml-1">ABOUT</span>
+                    </a></li>
+                    <li><a href="#projects" class="nav-link hover:text-gray-300 hover:bg-black p-2 rounded-lg hover:linear hover:duration-300">
+                        <i class="fa-solid fa-bars-progress"></i>
+                        <span class="ml-1">PROJECTS</span>
+                    </a></li>
+                    <li><a href="#skills" class="nav-link hover:text-gray-300 hover:bg-black p-2 rounded-lg hover:linear hover:duration-300">
+                        <i class="fa-solid fa-code"></i>
+                        <span class="ml-1">SKILLS</span>
+                    </a></li>
+                    <li><a href="#contact" class="nav-link hover:text-gray-300 hover:bg-black p-2 rounded-lg hover:linear hover:duration-300">
+                        <i class="fa-solid fa-address-book"></i>
+                        <span class="ml-1">CONTACT</span>
+                    </a></li>
+                    <ul class="flex pt-2 lg:pt-4 pl-8 lg:pl-10">
+                        <li class="mr-4 lg:mr-8"><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+                        <li class="mr-4 lg:mr-8"><a href="https://github.com/Ragavan0701" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
+                        <li class="mr-4 lg:mr-8"><a href="http://www.linkedin.com/in/ragavan-s-aa8141248" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://leetcode.com/Ragavan_S/" target="_blank" rel="noopener noreferrer"><i class="fas fa-code"></i></a></li>
+                    </ul>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+        
+    <section id="home" class="flex flex-col lg:flex-row section justify-center bg-gradient-to-r from-white to-blue-200">
+        <div class="div1 flex flex-col justify-center justify-evenly gap-4 lg:gap-4 lg:flex-row p-6 lg:p-12 bg-gradient-to-r from-white to-blue-200">
+            <div class="flex flex-col justify-center lg:p-6 lg:py-10 lg:px-10 text-center rounded-lg lg:order-1 lg:ml-[0rem]">
+                
+                <div class="lg:p-10 lg:py-10 lg:px-10 text-center rounded-lg lg:ml-6">
+                    <h1 class="text-3xl lg:text-5xl font-mono">Hello, I'm</h1>
+                    <h1 id="header" class="text-4xl lg:text-6xl pt-4 lg:pt-8 font-bold">RAGAVAN  S</h1>
+                    <h2 class="text-2xl lg:text-4xl pt-2 lg:pt-4 font-semibold text-gray-400">Software Engineer</h2>
+                    <ul class="flex justify-center pt-2 lg:pt-4 pl-8 lg:pl-10">
+                        <li class="mr-3 lg:mr-6">
+                          <div class="w-12 h-12 flex items-center justify-center rounded-full bg-gray-100 border-2 border-black relative">
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="text-black">
+                              <i class="fab fa-instagram"></i>
+                            </a>
+                            
+                        </li>
+                        <li class="mr-3 lg:mr-6">
+                          <div class="w-12 h-12 flex items-center justify-center rounded-full bg-gray-100 border-2 border-black relative">
+                            <a href="https://github.com/Ragavan0701" target="_blank" rel="noopener noreferrer" class="text-black">
+                              <i class="fab fa-github"></i>
+                            </a>
+                            
+                        </li>
+                        <li class="mr-3 lg:mr-6">
+                          <div class="w-12 h-12 flex items-center justify-center rounded-full bg-gray-100 border-2 border-black relative">
+                            <a href="http://www.linkedin.com/in/ragavan-s-aa8141248" target="_blank" rel="noopener noreferrer" class="text-black">
+                              <i class="fab fa-linkedin"></i>
+                            </a>
+                            
+                        </li>
+                        <li>
+                          <div class="w-12 h-12 flex items-center justify-center rounded-full bg-gray-100 border-2 border-black relative">
+                            <a href="https://leetcode.com/Ragavan_S/" target="_blank" rel="noopener noreferrer" class="text-black">
+                              <i class="fas fa-code"></i>
+                            </a>
+                            
+                        </li>
+                      </ul>
+                      <div class="lg:flex lg:flex-row flex-col gap-4 lg:ml-[6rem]">
+                        <button class="p-3 bg-black text-gray-300 rounded-lg mt-9">Hire Me</button>
+                        <button class="p-3 bg-black text-gray-300 rounded-lg mt-9">Resume</button>
+                    </div>
+                    
+                     
+                </div>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlRieCvSxvKNPNGgxLOOqmum0pHo3cV-D2Jg&usqp=CAU" 
+                 alt="no" 
+                 class="mx-auto w-[30rem] object-cover p-3 lg:p-10 border-1 border-black rounded-md lg:p-20 self-center lg:order-2 mt-4 lg:mt-0 lg:mr-[10rem] "
+            >
+        </div>
+    </section>
+    
+    
+    
+    
+
+        </div>
+    </section>
+    
+    
+            
+            
+            <section id="about" class="flex flex-col lg:flex-row section">
+                <div class="flex flex-col justify-evenly gap-20 lg:flex-row rounded-tr-md p-10 lg:p-20 bg-gradient-to-r from-white to-blue-200 justify-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlRieCvSxvKNPNGgxLOOqmum0pHo3cV-D2Jg&usqp=CAU" alt="no" class="w-[30rem] object-cover p-5 border-1 border-black rounded-md lg:p-20 fade-in-up">
+                    <div class="flex flex-col justify-center items-center">
+                        <h1 class="text-3xl lg:text-5xl font-bold mb-4 fade-in-up">About</h1>
+                        <h2 class="text-4xl font-semibold mb-2 fade-in-up">Experience</h2>
+                        <div class="max-w-lg mx-auto">
+                            
+                            <p class="mb-4 font-semibold text-slide-up">Professional Experience:</p>
+                            <ul class="list-disc pl-4 mb-4 fade-in-up">
+                                <li class="text-slide-up">
+                                    Software Engineer<br>
+                                    Mitsogo, Chennai<br>
+                                    2024 - Present<br>
+                                    Description:<br>
+                                    I am currently employed as a Software Engineer at Mitsogo, where I contribute to the development and enhancement of software solutions in alignment with organizational objectives. Leveraging my expertise in Information Technology honed during my academic tenure, I actively participate in diverse projects, collaborating with cross-functional teams to deliver innovative and scalable software solutions.
+                                </li>
+                            </ul>
+                            <h2 class="text-4xl font-semibold mb-2 fade-in-up flex flex-col justify-center items-center">Academic</h2>
+                            <p class="mb-4 font-semibold text-slide-up">Education:</p>
+                            <ul class="list-disc pl-4 mb-6 fade-in-up">
+                                <li class="text-slide-up">
+                                    Bachelor of Engineering in Information Technology<br>
+                                    VSB Engineering College, Karur<br>
+                                    Academic Years: 2020 - 2024<br>
+                                    CGPA: 8.5/10
+                                </li>
+                            </ul>
+                            <p class="mb-4 font-semibold text-slide-up">Description:</p>
+                            <p class="mb-6 fade-in-up">
+                                I am pleased to announce the successful completion of my Bachelor of Engineering in Information Technology from VSB Engineering College, Karur. The academic years from 2020 to 2024 have provided me with an enriching and comprehensive education in the dynamic field of Information Technology.
+                            </p>
+                            <p class="mb-4 font-semibold text-slide-up">Achievements:</p>
+                            <p class="mb-4 fade-in-up">
+                                Attaining a CGPA of 8.5/10 underscores my dedication, perseverance, and commitment to academic excellence. I am proud to have consistently excelled in my studies, demonstrating a keen understanding of complex concepts and a proactive approach to learning.
+                            </p>
+                            <a href="http://" class="bg-black text-white rounded p-2 flex justify-center align-center fade-in-up">RESUME</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+            <section id="projects" class="section">
+                <h1>Projects</h1>
+            </section>
+            <section id="skills" class="section">
+                <h1>Skills</h1>
+            </section>
+            <section id="contact" class="section">
+                <h1>Contact</h1>
+            </section>
+       
+        
+    
+            <script>
+                const message = 'RAGAVAN';
+let i = 1;
+document.querySelector('#header').innerHTML ="R";
+const intervalId = setInterval(function() {
+  document.querySelector('#header').innerHTML += message[i];
+  i++;
+  if (i === message.length+1) {
+    i=1;
+    document.querySelector('#header').innerHTML ="R";
+    //clearInterval(intervalId);
+  }
+}, 400);
+
+
+                document.addEventListener('DOMContentLoaded', function() {
+    const aboutSection = document.querySelector('#about');
+    const fadeInElements = aboutSection.querySelectorAll('.fade-in-up');
+    
+    function checkFadeIn() {
+        fadeInElements.forEach(element => {
+            if (isElementInViewport(element)) {
+                element.classList.add('fade-in-up-active');
+            }
+        });
+    }
+    
+    function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+    
+    checkFadeIn();
+    window.addEventListener('scroll', checkFadeIn);
+});
+
+                document.addEventListener('DOMContentLoaded', function () {
+                    const navLinks = document.querySelectorAll('.nav-link');
+                    const sections = document.querySelectorAll('.section');
+                    const navToggle = document.querySelector('.nav-toggle');
+                    const navMenu = document.querySelector('.nav-menu');
+            
+                    // Function to hide all sections except for the home section
+                    function hideAllSectionsExceptHome() {
+                        sections.forEach(section => {
+                            if (section.id !== 'home') {
+                                section.style.display = 'none';
+                            } else {
+                                section.style.display = 'block';
+                            }
+                        });
+                    }
+            
+                    // Show only the home section initially
+                    hideAllSectionsExceptHome();
+            
+                    navToggle.addEventListener('click', function () {
+                        // Check if the nav-toggle parent is visible
+                        const isToggleVisible = window.getComputedStyle(navToggle.parentElement).display !== 'none';
+            
+                        // Toggle the hidden class only if the toggle button is visible (on smaller screens)
+                        if (isToggleVisible) {
+                            navMenu.classList.toggle('hidden');
+                            navMenu.classList.toggle('transition delay-150 duration-300 ease-in-out');
+                        }
+                    });
+            
+                    navLinks.forEach(link => {
+                        link.addEventListener('click', function (e) {
+                            e.preventDefault();
+            
+                            const targetId = this.getAttribute('href').substring(1);
+                            const targetSection = document.getElementById(targetId);
+            
+                            // Hide all sections
+                            sections.forEach(section => {
+                                section.style.display = 'none';
+                            });
+            
+                           
+                            targetSection.style.display = 'block';
+            
+                           
+                            if (window.getComputedStyle(navToggle.parentElement).display !== 'none') {
+                                navMenu.classList.toggle('hidden');
+                            }
+                        });
+                    });
+                });
+            </script>
+            
+</body>
+</html>
